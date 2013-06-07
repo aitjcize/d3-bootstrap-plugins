@@ -3,6 +3,7 @@ annotate = (options,create)->
 
     move_tip = (selection)->
       center =  [0,0]
+      body = d3.select('body')
 
       if options.placement is "mouse"
         center = d3.mouse(body.node())
